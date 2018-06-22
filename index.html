@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/profile.png">
+    <title>AguayoShop</title>
+  </head>
+  <body>
+    <section>
+      <header class="header" >
+        <div class="headerButtonsContain" >
+          <button class="headerButton" onclick="toShop()">SHOP</button>
+          <button class="headerButton" onclick="">INSTAGRAM</button>
+          <button class="headerButton" onclick="">CLOSET ROOM</button>
+          <button class="headerButton" onclick="">VENDEDORAS</button>
+          <button class="headerButton" onclick="">BLOG</button>
+        </div>
+        <i class="fas fa-bars menuButton" onclick="modalToggle()" ></i>
+        <div class="searchContain" >
+          <input class="search" type="text" placeholder="¿Qué estás buscando?" >
+          <i class="fas fa-search searchIcon" ></i>
+        </div>
+      </header>
+      <div class="banner">
+        <h1>   TE REGALAMOS </h1>
+        <h1> EN TU PRIMERA </h1>
+        <h1> COMPRA </h1>
+      </div>
+    </section>
+    <section id='recien_llegado' class="sectionList" >
+      <div class="titleContain">
+        <h2><span>RECIEN</span> LLEGADOS</h2>
+        <p>LO ÚLTIMO DE NUESTRA TIENDA</p>
+      </div>
+      <div class="gridContain">
+        <div class="itemContain" >
+          <img src="assets/p1.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+        <div class="itemContain" >
+          <img src="assets/p2.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+        <div class="itemContain" >
+          <img src="assets/p3.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+        <div class="itemContain" >
+          <img src="assets/p4.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+        <div class="itemContain" >
+          <img src="assets/p5.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+        <div class="itemContain" >
+          <img src="assets/p6.png" alt="item">
+          <div class="itemNameContain">
+            <div class="itemName">
+              Sandalias de Cuero y
+              Tachas Saville Row
+            </div>
+            <div class="sizeTag">
+              <span>XS</span>
+            </div>
+          </div>
+          <div  class="brandContain">
+            <div class="brand">
+              Straadivaruois & Zara
+              Home Juntos
+            </div>
+            <p>$40.000</p>
+          </div>
+            <img src="assets/profile.png" alt="" class="profileImg">
+        </div>
+      </div>
+    </section>
+    <div id='modal' class="modal">
+      <i class="fas fa-times closeButton" onclick="modalToggle()" ></i>
+      <div class="searchContain searchModal" >
+        <input class="search" type="text" placeholder="¿Qué estás buscando?" >
+        <i class="fas fa-search searchIcon" ></i>
+      </div>
+      <button type="button" name="button" class='modalButton'>SHOP</button>
+      <button type="button" name="button" class='modalButton'>INSTAGRAM</button>
+      <button type="button" name="button" class='modalButton'>CLOSET ROOM</button>
+      <button type="button" name="button" class='modalButton'>VENDEDORAS</button>
+      <button type="button" name="button" class='modalButton'>BLOG</button>
+    </div>
+    <script type="text/javascript">
+
+      function toShop() {
+        window.location.href="#recien_llegado"
+      }
+
+      var $modal = document.getElementById('modal');
+
+      function modalToggle(){
+        $modal.classList.toggle('modalDisplay');
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+}
+
+.header {
+  height: 80px;
+  background: #000;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerButton {
+  text-decoration: none;
+  height: 80px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+      margin: 0 10px;
+}
+
+.headerButton:hover {
+  color: #fe7676;
+  font-weight: bold;
+}
+
+.searchContain {
+  background: #fff;
+  height: 32px;
+  width: 250px;
+  border: 1px solid #9a9a9a;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.search {
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  width: 215px;
+  position: absolute;
+  padding: 0 5px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 8px;
+  top: 9px;
+}
+
+.banner {
+  color: #fff;
+  background-image: url('./assets/bitmap-banner.png');
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner h1 {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 55px;
+  font-weight: lighter;
+  margin: 5px 5px 5px 0;
+  padding: 0 30px;
+}
+
+.sectionList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titleContain {
+  text-align: center;
+  margin: 60px;
+}
+
+.titleContain h2 {
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin: auto;
+}
+
+.titleContain h2 span {
+  color: #f47171;
+}
+
+.titleContain p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #777777;
+}
+
+.gridContain {
+  display: grid;
+  grid-template: 665px / repeat(3,300px);
+  grid-gap: 80px;
+  margin: auto;
+}
+
+.itemNameContain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemName {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+  margin: 10px 0 15px;
+}
+
+.sizeTag {
+  background: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+.brandContain {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  align-items: center;
+}
+
+.brand {
+  width: 200px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 5px 0;
+  line-height: 25px;
+}
+
+.brandContain p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  font-weight: lighter;
+  color: #777
+}
+
+.profileImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background: #000;
+  opacity: .9;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: closeModal .7s forwards;
+}
+
+.modalDisplay {
+  animation: openModal .7s forwards;
+  display: flex;
+}
+
+.modalButton {
+  color: #f47171;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  background: none;
+  border: none;
+  margin: 10PX;
+}
+
+.searchModal {
+  display: inline!important;
+}
+
+.closeButton {
+  color: red;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 35px;
+}
+
+@media screen and (max-width:1140px) {
+
+  .gridContain {
+    grid-template: 665px / repeat(2,300px);
+
+  }
+
+}
+
+@media screen and (max-width: 1010px) {
+  .header {
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+
+  .searchContain {
+    display: none;
+  }
+
+  .headerButtonsContain{
+    display: none;
+    overflow: hidden;
+  }
+
+  .menuButton {
+    color: #f47171;
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 911px) {
+
+  .titleContain h2 {
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 715px) {
+  .titleContain h2 {
+    font-size: 30px;
+  }
+  .titleContain p {
+    font-size: 10px;
+  }
+
+  .gridContain {
+    grid-template: 665px / 300px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .banner h1{
+    font-size: 20px;
+  }
+
+  .searchContain {
+    width: 150px;
+  }
+}
+
+@keyframes openModal {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: .8;
+  }
+}
+
+@keyframes closeModal {
+  from{
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
